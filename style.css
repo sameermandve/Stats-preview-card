@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(233, 47%, 7%);
+}
+
+span {
+  color: hsl(277, 64%, 61%);
+}
+
+#card {
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+#first-section {
+  width: 400px;
+  padding: 3rem 5rem 2rem 2.5rem;
+}
+
+#info-container {
+  padding-bottom: 2rem;
+}
+
+#info-container h1 {
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+#info-container p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+#numbers-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem 0 1rem 0;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+}
+
+.data h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+
+.data p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+#image-container {
+  width: 400px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: hsl(277, 64%, 61%);
+}
+
+img {
+  width: 400px;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: hsl(277, 64%, 61%);
+  filter: opacity(50%);
+  -webkit-filter: opacity(50%);
+}
+
+/* Responsive CSS */
+
+@media screen and (max-width: 375px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  #card {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 325px;
+  }
+
+  #image-container {
+    width: 325px;
+    height: 268.42px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 10px;
+  }
+
+  img {
+    width: 325px;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 0;
+  }
+
+  #first-section {
+    width: 325px;
+    text-align: center;
+    padding: 2.5rem 2.75rem 2rem 2.75rem;
+  }
+
+  #info-container {
+    padding-bottom: 1.5rem;
+  }
+
+  #info-container h1 {
+    margin-bottom: 1.25rem;
+  }
+
+  #numbers-container {
+    padding: 1rem 0 0 0;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .data {
+    padding-bottom: 1.5rem;
+  }
+
+  .data:last-child {
+    padding-bottom: 0;
+  }
+}
